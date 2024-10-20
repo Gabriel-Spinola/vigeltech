@@ -21,11 +21,11 @@ export default function Footer() {
         </p>
 
         <div className="flex flex-row gap-8 align-middle justify-center">
-          <button className="w-[16vw] h-[5.5vh] shadow-lg rounded-lg shadow-reddark bg-redlight border-graylight hover:ease-in transition-all duration-100 ease-in-out hover:bg-graylight hover:border hover:border-graylight hover:text-redlight">
+          <button className="w-[16vw] h-[5.5vh] shadow-lg rounded-lg shadow-reddark bg-redlight border-graylight hover:ease-in transition-all duration-100 ease-in-out hover:bg-graylight hover:border hover:border-graylight hover:text-redlight hover:scale-105">
             Marque uma call
           </button>
           <button
-            className="w-[16vw] h-[5.5vh] shadow-lg shadow-reddark rounded-lg border-redlight border hover:text-redlight transition-all duration-150"
+            className="w-[16vw] h-[5.5vh] shadow-lg shadow-reddark rounded-lg border-redlight border hover:text-redlight transition-all duration-150 hover:scale-105"
             onClick={() =>
               (window.location.href = 'mailto:vigelcontato@gmail.com')
             }
@@ -35,11 +35,11 @@ export default function Footer() {
         </div>
 
         {/* REVIEW - Check if looks good */}
-        {/* <div className="w-full justify-center text-center">
-          <button className="text-graylight bg-blue w-[18vw] h-[8vh] rounded-xl">
+        <div className="w-full justify-center text-center">
+          <button className="text-graylight bg-blue w-[16vw] h-[5.5vh] rounded-xl shadow-lg shadow-blue/75 hover:scale-105">
             Veja nossos trabalhos aqui
           </button>
-        </div> */}
+        </div>
       </article>
 
       <article className="flex flex-row gap-36 text-start">
@@ -102,8 +102,6 @@ export default function Footer() {
           </div>
         </div>
       </article>
-
-      <hr />
 
       <div>
         <p>

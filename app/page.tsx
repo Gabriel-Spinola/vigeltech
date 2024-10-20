@@ -8,7 +8,6 @@ import Header from './components/Header'
 import Services from './components/Services'
 import AboutUs from './components/AboutUs'
 import Portfolio from './components/Portfolio'
-import Team from './components/Team'
 
 export default function Home() {
   return (
