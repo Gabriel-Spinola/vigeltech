@@ -10,22 +10,22 @@ interface Props {
 const services: Props[] = [
   {
     title: 'Desenvolvimento de aplicativos móveis',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex suscipit necessitatibus! Optio distinctio excepturi est ducimus molestias doloribus culpa enim eos voluptatum consequuntur quibusdam non, atque error labore veniam.',
+    text: 'Criamos aplicativos mobile personalizados que ajudam sua empresa a se conectar melhor com clientes, melhorar processos internos e explorar novas oportunidades de mercado.',
     icon: 'phone_iphone',
   },
   {
     title: 'Desenvolvimento WEB',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex suscipit necessitatibus! Optio distinctio excepturi est ducimus molestias doloribus culpa enim eos voluptatum consequuntur quibusdam non, atque error labore veniam.',
+    text: 'Criamos websites personalizados e soluções SaaS que permitem às empresas expandir sua presença digital, otimizar operações e oferecer serviços inovadores online, atendendo às demandas do mercado moderno.',
     icon: 'travel_explore',
   },
   {
     title: 'Desenvolvimento de Servidores e APIs',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex suscipit necessitatibus! Optio distinctio excepturi est ducimus molestias doloribus culpa enim eos voluptatum consequuntur quibusdam non, atque error labore veniam.',
+    text: 'Desenvolvemos servidores escaláveis e APIs robustas que garantem a comunicação eficiente entre sistemas, possibilitando a integração de dados e automação de processos para suportar o crescimento do seu negócio.',
     icon: 'nearby',
   },
   {
     title: 'Desenvolvimento de Sistemas',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex suscipit necessitatibus! Optio distinctio excepturi est ducimus molestias doloribus culpa enim eos voluptatum consequuntur quibusdam non, atque error labore veniam.',
+    text: 'Sabemos que cada empresa tem suas próprias necessidades e processos únicos. Por isso oferecemos desenvolvimento de sistemas personalizados, criados sob medida para resolver desafios específicos e otimizar o funcionamento do seu negócio.',
     icon: 'desktop_windows',
   },
 ]
@@ -43,8 +43,8 @@ export default function Services() {
         </h2>
         <ul className="text-reddark flex flex-col gap-8 text-xl w-full">
           {services.map((service, index) => (
-            <li key={index} className="w-full flex justify-between pb-2">
-              <div className="flex gap-4">
+            <li key={index} className="w-full flex justify-between p-4">
+              <div className="flex flex-row items-center gap-4">
                 <span className="material-symbols-outlined">
                   {service.icon}
                 </span>
