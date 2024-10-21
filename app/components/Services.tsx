@@ -1,5 +1,8 @@
+'use client'
+
 import React from 'react'
 import styles from '@/app/styles/services.module.scss'
+import useSlideUpAnimation from '../hooks/useSlideUpAnimation'
 
 interface Props {
   title: string
@@ -31,10 +34,13 @@ const services: Props[] = [
 ]
 
 export default function Services() {
+  const isVisible = useSlideUpAnimation('services-section')
+
   return (
     <>
       <section
-        className={`${styles.section1} px-32 pb-32 flex flex-col gap-16 w-full items-center`}
+        id="services-section"
+        className={`${styles.section1} px-32 pb-28 flex flex-col gap-16 w-full items-center ${isVisible ? 'section-show' : 'section-hidden'}`}
       >
         <h2
           className={`${styles.section1Title} text-5xl text-gray text-left w-full`}

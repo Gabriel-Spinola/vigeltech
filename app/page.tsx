@@ -1,5 +1,3 @@
-'use client'
-
 import './style.css'
 import styles from '@/app/styles/main.module.scss'
 // import Carousel from './components/Carousel'

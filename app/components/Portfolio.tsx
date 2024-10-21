@@ -1,12 +1,18 @@
+'use client'
+
 import React from 'react'
 import Carousel from './Carousel'
 import styles from '../styles/carousel.module.scss'
 import Image from 'next/image'
+import useSlideUpAnimation from '../hooks/useSlideUpAnimation'
 
 export default function Portfolio() {
+  const isVisible = useSlideUpAnimation('portfolio')
+
   return (
     <section
-      className={`px-32 pt-16 mb-4 flex flex-col gap-20 ${styles.carouselContainer}`}
+      id="portfolio"
+      className={`px-32 pt-16 mb-4 flex flex-col gap-20 ${styles.carouselContainer} ${isVisible ? 'section-show' : 'section-hidden'}`}
     >
       <h1 className="text-5xl text-graydark text-center">
         ALGUNS <span className="text-redlight">PROJETOS</span> NOSSOS:

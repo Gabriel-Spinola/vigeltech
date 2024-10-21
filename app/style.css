@@ -1,5 +1,5 @@
 @import url(./globals.css);
-  
+
 footer * {
     font-size: large;
     color: #fff;
@@ -7,4 +7,29 @@ footer * {
 
 * {
     transition: all;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        /* Start hidden below the viewport */
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Initially hide the section */
+.section-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Apply the animation when the 'show' class is added */
+.section-show {
+    animation: slideUp .35s ease-in-out forwards;
+    /* Adjust duration and easing as needed */
 }

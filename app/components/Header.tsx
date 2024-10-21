@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`min-h-[110vh] bg-office-work bg-bottom bg-no-repeat bg-cover px-32 py-16 ${styles.header}`}
+        className={`min-h-[111vh] bg-office-work bg-bottom bg-no-repeat bg-cover px-32 py-16 ${styles.header}`}
         style={{ backgroundAttachment: 'fixed' }}
       >
         <section
