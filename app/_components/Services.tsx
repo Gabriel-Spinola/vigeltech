@@ -2,8 +2,8 @@
 
 import React, { useContext } from 'react'
 import styles from '@/app/styles/services.module.scss'
-import useSlideUpAnimation from '../hooks/useSlideUpAnimation'
-import { TranslationContext } from '../providers/translationContext'
+import useSlideUpAnimation from '../_hooks/useSlideUpAnimation'
+import { TranslationContext } from '../_providers/translationContext'
 
 interface Props {
   title: string

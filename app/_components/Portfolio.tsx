@@ -4,7 +4,7 @@ import React from 'react'
 import Carousel from './Carousel'
 import styles from '../styles/carousel.module.scss'
 import Image from 'next/image'
-import useSlideUpAnimation from '../hooks/useSlideUpAnimation'
+import useSlideUpAnimation from '../_hooks/useSlideUpAnimation'
 
 export default function Portfolio() {
   const isVisible = useSlideUpAnimation('portfolio')

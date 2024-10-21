@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styles from '@/app/styles/aboutus.module.scss'
-import useSlideUpAnimation from '../hooks/useSlideUpAnimation'
+import useSlideUpAnimation from '../_hooks/useSlideUpAnimation'
 
 export default function AboutUs() {
   const isVisible = useSlideUpAnimation('about-us')
