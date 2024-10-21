@@ -40,7 +40,7 @@ export default function Services() {
     <>
       <section
         id="services-section"
-        className={`${styles.section1} px-32 pb-28 flex flex-col gap-16 w-full items-center ${isVisible ? 'section-show' : 'section-hidden'}`}
+        className={`${styles.section1} px-32 pb-28 flex flex-col gap-16 w-full items-center snap-start ${isVisible ? 'section-show' : 'section-hidden'}`}
       >
         <h2
           className={`${styles.section1Title} text-5xl text-gray text-left w-full`}

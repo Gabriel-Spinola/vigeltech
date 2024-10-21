@@ -16,9 +16,9 @@ export default function Header() {
           <SmileyIcon />
           <section className="flex flex-col gap-24 font-bold">
             <nav className="flex flex-row gap-32 text-lightblue font-bold w-full justify-center text-2xl">
-              <Link href={''}>produtos</Link>
-              <Link href={''}>sobre</Link>
-              <Link href={''}>contato</Link>
+              <Link href={'#services-section'}>serviços</Link>
+              <Link href={'#about-us'}>sobre</Link>
+              <Link href={'#contact'}>contato</Link>
             </nav>
             <h1
               className={`${styles.headerTitle} drop-shadow-lg text-[#fff] text-8xl text-center`}

@@ -1,9 +1,11 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 export default function useSlideUpAnimation(sectionId: string): boolean {
   const [isVisible, setIsVisible] = useState(false)
+  const pathName = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,16 +15,19 @@ export default function useSlideUpAnimation(sectionId: string): boolean {
         const windowHeight =
           window.innerHeight || document.documentElement.clientHeight
 
-        // Check if the section is in the viewport
         if (rect.top <= windowHeight * 0.8) {
-          setIsVisible(true) // Trigger animation
+          setIsVisible(true)
         }
       }
     }
 
+    if (pathName.includes(`#${sectionId}`)) {
+      handleScroll()
+    }
+
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll) // Clean up event listener
-  }, [sectionId])
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [sectionId, pathName])
 
   return isVisible
 }

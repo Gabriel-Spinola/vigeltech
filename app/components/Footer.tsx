@@ -9,9 +9,6 @@ export default function Footer() {
       id="contact"
       className={`flex flex-col items-center gap-32 w-full py-12 bg-black text-white text-center justify-center ${styles.footerContainer}`}
     >
-      {/* LINK - https://www.octaveagency.com/ */}
-      {/* LINK - https://www.jamm.co/#pricing */}
-      {/* TODO - Add cool animation here */}
       <article className="flex flex-col w-full gap-8">
         <h1 className="text-5xl font-bold text-redlight">
           VAMOS CONSTRUIR ALGO JUNTOS?
@@ -23,7 +20,12 @@ export default function Footer() {
         </p>
 
         <div className="flex flex-row gap-8 align-middle justify-center">
-          <button className="w-[16vw] h-[5.5vh] shadow-lg rounded-lg shadow-reddark bg-redlight border-graylight hover:ease-in transition-all duration-100 ease-in-out hover:bg-graylight hover:border hover:border-graylight hover:text-redlight hover:scale-105">
+          <button
+            className="w-[16vw] h-[5.5vh] shadow-lg rounded-lg shadow-reddark bg-redlight border-graylight hover:ease-in transition-all duration-100 ease-in-out hover:bg-graylight hover:border hover:border-graylight hover:text-redlight hover:scale-105"
+            onClick={() =>
+              (window.location.href = 'https://calendly.com/vigelbiz7/30min')
+            }
+          >
             Marque uma call
           </button>
           <button
@@ -33,13 +35,6 @@ export default function Footer() {
             }
           >
             Nos mande um email
-          </button>
-        </div>
-
-        {/* REVIEW - Check if looks good */}
-        <div className="w-full justify-center text-center">
-          <button className="text-graylight bg-blue w-[16vw] h-[5.5vh] rounded-xl shadow-lg shadow-blue/75 hover:scale-105">
-            Veja nossos trabalhos aqui
           </button>
         </div>
       </article>
@@ -57,7 +52,7 @@ export default function Footer() {
 
           {/* TODO -  Social medias */}
           <div className="flex flex-row gap-6">
-            <a href="">
+            {/* <a href="">
               <span>Icon here</span>
             </a>
             <a href="">
@@ -65,7 +60,7 @@ export default function Footer() {
             </a>
             <a href="">
               <span>Icon here</span>
-            </a>
+            </a> */}
           </div>
         </div>
 
