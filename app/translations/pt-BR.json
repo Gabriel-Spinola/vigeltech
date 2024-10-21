@@ -1,0 +1,38 @@
+{
+  "services": "serviços",
+  "about": "sobre",
+  "contact": "contato",
+  "headerTitle": {
+    "main": "FAZENDO",
+    "your": "SUA",
+    "idea": "IDEIA",
+    "reality": "REALIDADE"
+  },
+  "servicesSection": {
+    "title1": "NOSSOS",
+    "title2": "SERVIÇOS",
+    "services": [
+      {
+        "title": "Desenvolvimento de aplicativos móveis",
+        "text": "Criamos aplicativos mobile personalizados que ajudam sua empresa a se conectar melhor com clientes, melhorar processos internos e explorar novas oportunidades de mercado.",
+        "icon": "phone_iphone"
+      },
+      {
+        "title": "Desenvolvimento WEB",
+        "text": "Criamos websites personalizados e soluções SaaS que permitem às empresas expandir sua presença digital, otimizar operações e oferecer serviços inovadores online, atendendo às demandas do mercado moderno.",
+        "icon": "travel_explore"
+      },
+      {
+        "title": "Desenvolvimento de Servidores e APIs",
+        "text": "Desenvolvemos servidores escaláveis e APIs robustas que garantem a comunicação eficiente entre sistemas, possibilitando a integração de dados e automação de processos para suportar o crescimento do seu negócio.",
+         "icon": "nearby"
+      },
+      {
+        "title": "Desenvolvimento de Sistemas",
+        "text": "Sabemos que cada empresa tem suas próprias necessidades e processos únicos. Por isso oferecemos desenvolvimento de sistemas personalizados, criados sob medida para resolver desafios específicos e otimizar o funcionamento do seu negócio.",
+        "icon": "desktop_windows"
+      }
+    ],
+    "contactUs": "CONTATE-NOS"
+  }
+}

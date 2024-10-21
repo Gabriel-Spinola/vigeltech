@@ -2,8 +2,11 @@ import React from 'react'
 import styles from '@/app/styles/header.module.scss'
 import SmileyIcon from './SmileyIcons'
 import Link from 'next/link'
+import { getTranslation, ImplLocale } from '../[locale]/getTranslations'
 
-export default function Header() {
+export default async function Header({ locale }: { locale: ImplLocale }) {
+  const translation = await getTranslation(locale)
+
   return (
     <>
       <header
@@ -16,15 +19,21 @@ export default function Header() {
           <SmileyIcon />
           <section className="flex flex-col gap-24 font-bold">
             <nav className="flex flex-row gap-32 text-lightblue font-bold w-full justify-center text-2xl">
-              <Link href={'#services-section'}>serviços</Link>
-              <Link href={'#about-us'}>sobre</Link>
-              <Link href={'#contact'}>contato</Link>
+              <Link href={'#services-section'}>{translation.services}</Link>
+              <Link href={'#about-us'}>{translation.about}</Link>
+              <Link href={'#contact'}>{translation.contact}</Link>
             </nav>
             <h1
               className={`${styles.headerTitle} drop-shadow-lg text-[#fff] text-8xl text-center`}
             >
-              FAZENDO <span className="text-redlight">SUA</span> IDEIA{' '}
-              <span className="text-redlight">REALIDADE</span>
+              {translation.headerTitle?.main}{' '}
+              <span className="text-redlight">
+                {translation.headerTitle?.your}
+              </span>{' '}
+              {translation.headerTitle?.idea}{' '}
+              <span className="text-redlight">
+                {translation.headerTitle?.reality}
+              </span>
             </h1>
           </section>
           <SmileyIcon />

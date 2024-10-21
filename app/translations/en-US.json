@@ -1,0 +1,38 @@
+{
+  "services": "services",
+  "about": "about",
+  "contact": "contact",
+  "headerTitle": {
+    "main": "MAKING",
+    "your": "YOUR",
+    "idea": "IDEA",
+    "reality": "REALITY"
+  },
+  "servicesSection": {
+    "title1": "OUR",
+    "title2": "SERVICES",
+    "services": [
+      {
+        "title": "Mobile App Development",
+        "text": "We create custom mobile apps that help your business better connect with customers, improve internal processes, and explore new market opportunities.",
+        "icon": "phone_iphone"
+      },
+      {
+        "title": "WEB Development",
+        "text": "We create custom websites and SaaS solutions that help businesses expand their digital presence, optimize operations, and offer innovative online services, meeting the demands of the modern market.",
+        "icon": "travel_explore"
+      },
+      {
+        "title": "Server and API Development",
+        "text": "We develop scalable servers and robust APIs that ensure efficient communication between systems, enabling data integration and process automation to support your business growth.",
+        "icon": "nearby"
+      },
+      {
+        "title": "System Development",
+        "text": "We understand that every company has unique needs and processes. That's why we offer custom system development, tailored to solve specific challenges and optimize the operation of your business.",
+        "icon": "desktop_windows"
+      }
+    ],
+    "contactUs": "CONTACT US"
+  }
+}

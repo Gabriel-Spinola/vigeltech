@@ -1,8 +1,9 @@
 'use client'
 
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from '@/app/styles/services.module.scss'
 import useSlideUpAnimation from '../hooks/useSlideUpAnimation'
+import { TranslationContext } from '../providers/translationContext'
 
 interface Props {
   title: string
@@ -34,6 +35,9 @@ const services: Props[] = [
 ]
 
 export default function Services() {
+  const translationContext = useContext(TranslationContext)
+  const services = translationContext?.translation.servicesSection?.services
+  const translation = translationContext?.translation.servicesSection
   const isVisible = useSlideUpAnimation('services-section')
 
   return (
@@ -45,10 +49,11 @@ export default function Services() {
         <h2
           className={`${styles.section1Title} text-5xl text-gray text-left w-full`}
         >
-          NOSSOS <span className="text-redlight">SERVIÇOS</span>
+          {translation?.title1}
+          <span className="text-redlight">{translation?.title2}</span>
         </h2>
         <ul className="text-reddark flex flex-col gap-8 text-xl w-full">
-          {services.map((service, index) => (
+          {services?.map((service, index) => (
             <li key={index} className="w-full flex justify-between p-4">
               <div className="flex flex-row items-center gap-4">
                 <span className="material-symbols-outlined">
@@ -61,7 +66,7 @@ export default function Services() {
           ))}
         </ul>
         <button className="max-w-128 text-2xl border-2 text-[#fff] px-16 py-4 rounded-xl bg-redlight hover:bg-[#fff] hover:border-2 border-redlight hover:text-redlight">
-          CONTATE-NOS
+          {translation?.contactUs}
         </button>
       </section>
     </>
