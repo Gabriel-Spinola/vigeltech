@@ -5,39 +5,11 @@ import styles from '@/app/styles/services.module.scss'
 import useSlideUpAnimation from '../_hooks/useSlideUpAnimation'
 import { TranslationContext } from '../_providers/translationContext'
 
-interface Props {
-  title: string
-  text: string
-  icon: string
-}
-
-const services: Props[] = [
-  {
-    title: 'Desenvolvimento de aplicativos móveis',
-    text: 'Criamos aplicativos mobile personalizados que ajudam sua empresa a se conectar melhor com clientes, melhorar processos internos e explorar novas oportunidades de mercado.',
-    icon: 'phone_iphone',
-  },
-  {
-    title: 'Desenvolvimento WEB',
-    text: 'Criamos websites personalizados e soluções SaaS que permitem às empresas expandir sua presença digital, otimizar operações e oferecer serviços inovadores online, atendendo às demandas do mercado moderno.',
-    icon: 'travel_explore',
-  },
-  {
-    title: 'Desenvolvimento de Servidores e APIs',
-    text: 'Desenvolvemos servidores escaláveis e APIs robustas que garantem a comunicação eficiente entre sistemas, possibilitando a integração de dados e automação de processos para suportar o crescimento do seu negócio.',
-    icon: 'nearby',
-  },
-  {
-    title: 'Desenvolvimento de Sistemas',
-    text: 'Sabemos que cada empresa tem suas próprias necessidades e processos únicos. Por isso oferecemos desenvolvimento de sistemas personalizados, criados sob medida para resolver desafios específicos e otimizar o funcionamento do seu negócio.',
-    icon: 'desktop_windows',
-  },
-]
-
 export default function Services() {
   const translationContext = useContext(TranslationContext)
   const services = translationContext?.translation.servicesSection?.services
   const translation = translationContext?.translation.servicesSection
+
   const isVisible = useSlideUpAnimation('services-section')
 
   return (
@@ -49,7 +21,7 @@ export default function Services() {
         <h2
           className={`${styles.section1Title} text-5xl text-gray text-left w-full`}
         >
-          {translation?.title1}
+          {translation?.title1}{' '}
           <span className="text-redlight">{translation?.title2}</span>
         </h2>
         <ul className="text-reddark flex flex-col gap-8 text-xl w-full">

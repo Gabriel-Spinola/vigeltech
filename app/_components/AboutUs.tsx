@@ -1,10 +1,13 @@
 'use client'
 
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from '@/app/styles/aboutus.module.scss'
 import useSlideUpAnimation from '../_hooks/useSlideUpAnimation'
+import { TranslationContext } from '../_providers/translationContext'
 
 export default function AboutUs() {
+  const translationContext = useContext(TranslationContext)
+  const translation = translationContext?.translation.aboutSection
   const isVisible = useSlideUpAnimation('about-us')
 
   return (
@@ -16,32 +19,22 @@ export default function AboutUs() {
         <div>
           {/* Container for the right side */}
           <div className="text-xl text-[#fff] max-w-xl">
-            <h2 className="text-5xl text-[#fff]">QUEM SOMOS?</h2>
+            <h2 className="text-5xl text-[#fff]">
+              {translation?.whoWeAreTitle}
+            </h2>
             {/* Adjusted max-width */}
-            Somos uma empresa especializada em{' '}
-            <span className={styles.textSpan}>
-              desenvolvimento de aplicativos mobile
-            </span>{' '}
-            e <span className={styles.textSpan}>desktop</span>, criação de{' '}
-            <span className={styles.textSpan}>sites</span> e{' '}
-            <span className={styles.textSpan}>sistemas</span>, além de oferecer{' '}
-            <span className={styles.textSpan}>serviços de design</span>.
-            <p>
-              Asseguramos que cada projeto reflita a individualidade de quem o
-              solicita, com performance otimizada para suas necessidades.
-            </p>
+            <p>{translation?.whoWeAreText}</p>
           </div>
         </div>
 
         <div className=" translate-y-11">
           {/* Container for the left side */}
           <div className="text-xl text-[#fff] max-w-xl">
-            <h2 className="text-5xl text-[#fff]">NOSSA VISÃO</h2>
+            <h2 className="text-5xl text-[#fff]">
+              {translation?.ourVisionTitle}
+            </h2>
             {/* Adjusted max-width */}
-            <p>
-              Transformar ideias em soluções digitais eficazes, ajudando
-              empresas a criar, escalar e expandir seus produtos e serviços.
-            </p>
+            <p>{translation?.ourVisionText}</p>
           </div>
         </div>
       </section>

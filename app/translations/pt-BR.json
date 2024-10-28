@@ -34,5 +34,11 @@
       }
     ],
     "contactUs": "CONTATE-NOS"
+  },
+  "aboutSection": {
+    "whoWeAreTitle": "QUEM SOMOS?",
+    "whoWeAreText": "Somos uma empresa especializada em desenvolvimento de aplicativos mobile e desktop, criação de sites e sistemas, além de oferecer serviços de design. Asseguramos que cada projeto reflita a individualidade de quem o solicita, com performance otimizada para suas necessidades.",
+    "ourVisionTitle": "NOSSA VISÃO",
+    "ourVisionText": "Transformar ideias em soluções digitais eficazes, ajudando empresas a criar, escalar e expandir seus produtos e serviços."
   }
 }

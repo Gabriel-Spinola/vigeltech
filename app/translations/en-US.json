@@ -34,5 +34,11 @@
       }
     ],
     "contactUs": "CONTACT US"
+  },
+  "aboutSection": {
+    "whoWeAreTitle": "WHO ARE WE?",
+    "whoWeAreText": "We are a company specialized in mobile and desktop app development, website and system creation, and design services. We ensure that each project reflects the individuality of its client, with performance optimized for their specific needs.",
+    "ourVisionTitle": "OUR VISION",
+    "ourVisionText": "To turn ideas into effective digital solutions, helping businesses create, scale, and expand their products and services."
   }
 }
