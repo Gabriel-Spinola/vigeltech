@@ -1,11 +1,11 @@
 .aboutUsContainer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50px; // Ajuste diferente para não sobrepor
   left: 0;
   right: 0;
   height: 100px; // Altura ajustada
-  background: #DA6666; // Ou a cor que deseja
+  background: #da6666; // Ou a cor que deseja
   transform: skewY(2deg); // Aplicando a inclinação
   z-index: -1; // Coloca atrás do conteúdo
 }

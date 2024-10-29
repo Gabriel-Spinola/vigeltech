@@ -1,13 +1,16 @@
 'use client'
 
-import React from 'react'
+import React, { useContext } from 'react'
 import Carousel from './Carousel'
 import styles from '../styles/carousel.module.scss'
 import Image from 'next/image'
-import useSlideUpAnimation from '../hooks/useSlideUpAnimation'
+import useSlideUpAnimation from '../_hooks/useSlideUpAnimation'
+import { TranslationContext } from '../_providers/translationContext'
 
 export default function Portfolio() {
   const isVisible = useSlideUpAnimation('portfolio')
+  const translationContext = useContext(TranslationContext)
+  const translation = translationContext?.translation.portfolioSection
 
   return (
     <section
@@ -15,7 +18,8 @@ export default function Portfolio() {
       className={`px-32 pt-16 mb-4 flex flex-col gap-20 ${styles.carouselContainer} ${isVisible ? 'section-show' : 'section-hidden'}`}
     >
       <h1 className="text-5xl text-graydark text-center">
-        ALGUNS <span className="text-redlight">PROJETOS</span> NOSSOS:
+        {translation?.title1}{' '}
+        <span className="text-redlight">{translation?.title2}</span>
       </h1>
       <Carousel />
       <section className="flex flex-col gap-4">

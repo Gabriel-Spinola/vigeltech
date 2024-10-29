@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap");
 @import "material-symbols";
 
 :root {
-  --blue: '#4E93BC';
-  --redlight: '#DA6666';
-  --reddark: '#9C4E4E';
-  --graydark: '#434343';
+  --blue: "#4E93BC";
+  --redlight: "#DA6666";
+  --reddark: "#9C4E4E";
+  --graydark: "#434343";
   --black: #232638;
   --gray: #595959;
-  --graylight: '#FFFFFF';
+  --graylight: "#FFFFFF";
   --background: #ffffff;
   --foreground: var(--graydark);
 }

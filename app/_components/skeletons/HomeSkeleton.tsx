@@ -1,9 +1,7 @@
 import React from 'react'
 import styles from '@/app/styles/header.module.scss'
-import SmileyIcon from './SmileyIcons'
-import Link from 'next/link'
 
-export default function Header() {
+export default function HeaderSkeleton() {
   return (
     <>
       <header
@@ -13,21 +11,24 @@ export default function Header() {
         <section
           className={`flex flex-row gap-24 items-center ${styles.headerContent}`}
         >
-          <SmileyIcon />
+          <div className={`${styles.iconPlaceholder}`} />{' '}
+          {/* Placeholder for SmileyIcon */}
           <section className="flex flex-col gap-24 font-bold">
             <nav className="flex flex-row gap-32 text-lightblue font-bold w-full justify-center text-2xl">
-              <Link href={'#services-section'}>serviços</Link>
-              <Link href={'#about-us'}>sobre</Link>
-              <Link href={'#contact'}>contato</Link>
+              <div className="h-8 w-32 bg-gray-200 rounded-md" />{' '}
+              {/* Placeholder for links */}
+              <div className="h-8 w-32 bg-gray-200 rounded-md" />
+              <div className="h-8 w-32 bg-gray-200 rounded-md" />
             </nav>
             <h1
               className={`${styles.headerTitle} drop-shadow-lg text-[#fff] text-8xl text-center`}
             >
-              FAZENDO <span className="text-redlight">SUA</span> IDEIA{' '}
-              <span className="text-redlight">REALIDADE</span>
+              <div className="h-12 w-64 bg-gray-200 rounded-md mx-auto" />{' '}
+              {/* Placeholder for title */}
             </h1>
           </section>
-          <SmileyIcon />
+          <div className={`${styles.iconPlaceholder}`} />{' '}
+          {/* Placeholder for SmileyIcon */}
         </section>
         <div className={`${styles.overlay}`}></div>
       </header>
