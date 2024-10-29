@@ -1,11 +1,15 @@
 'use server'
 
-export type ImplLocale = 'pt-BR' | 'en-US'
+export type ImplLocale = 'pt-BR' | 'en-US' | 'pt' | 'en'
 
 const translations = {
+  pt: () =>
+    import('../translations/pt-BR.json').then((module) => module.default),
   'pt-BR': () =>
     import('../translations/pt-BR.json').then((module) => module.default),
   'en-US': () =>
+    import('../translations/en-US.json').then((module) => module.default),
+  en: () =>
     import('../translations/en-US.json').then((module) => module.default),
 }
 

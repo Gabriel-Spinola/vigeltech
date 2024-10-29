@@ -1,22 +1,24 @@
 'use client'
 
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from '@/app/styles/footer.module.scss'
+import { TranslationContext } from '../_providers/translationContext'
 
 export default function Footer() {
+  const localeContext = useContext(TranslationContext)
+  const locale = localeContext?.translation.footer
+
   return (
     <footer
       id="contact"
       className={`flex flex-col items-center gap-32 w-full py-12 bg-black text-white text-center justify-center ${styles.footerContainer}`}
     >
       <article className="flex flex-col w-full gap-8">
-        <h1 className="text-5xl font-bold text-redlight">
-          VAMOS CONSTRUIR ALGO JUNTOS?
-        </h1>
+        <h1 className="text-5xl font-bold text-redlight">{locale?.title}</h1>
         <p className="text-graylight text-xl">
-          Contrate uma equipe de especialistas oferecendo soluções completas de
-          software <br /> para impulsionar seu negócio com agilidade e
-          eficiência.
+          {locale?.description}
+          <br />
+          {locale?.description2}
         </p>
 
         <div className="flex flex-row gap-8 align-middle justify-center">
@@ -26,7 +28,7 @@ export default function Footer() {
               (window.location.href = 'https://calendly.com/vigelbiz7/30min')
             }
           >
-            Marque uma call
+            {locale?.buttons.scheduleCall}
           </button>
           <button
             className="w-[16vw] h-[5.5vh] shadow-lg shadow-reddark rounded-lg border-redlight border hover:text-redlight transition-all duration-150 hover:scale-105"
@@ -34,7 +36,7 @@ export default function Footer() {
               (window.location.href = 'mailto:vigelcontato@gmail.com')
             }
           >
-            Nos mande um email
+            {locale?.buttons.sendEmail}
           </button>
         </div>
       </article>
@@ -42,9 +44,9 @@ export default function Footer() {
       <article className="flex flex-row gap-36 text-start">
         <div className="flex flex-col gap-4">
           <h2 className="text-graylight font-bold text-2xl">Vigel</h2>
-          <span>From Brasil</span>
-          <span className="text-base">Tel 1: +55 (31) 9 7300-8566</span>
-          <span className="text-base">Tel 2: +55 (31) 9 8865-4602</span>
+          <span>{locale?.contactInfo.from}</span>
+          <span className="text-base">{locale?.contactInfo.phone1}</span>
+          <span className="text-base">{locale?.contactInfo.phone2}</span>
           <span className="text-base">
             Email:{' '}
             <a href="mailto:vigelcontato@gmail.com">vigelcontato@gmail.com</a>
@@ -66,21 +68,21 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4">
           <h2 className="font-bold text-2xl">Links</h2>
-          <a href="#">Nossos serviços</a>
-          <a href="#">Sobre nós</a>
-          <a href="#">Nossos trabalhos</a>
-          <a href="#">Contato</a>
+          <a href="#">{locale?.links.services}</a>
+          <a href="#">{locale?.links.aboutUs}</a>
+          <a href="#">{locale?.links.projects}</a>
+          <a href="#">{locale?.links.contact}</a>
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-bold">Serviços</h2>
-          <a href="#">Desenvolvimeto de aplicativos móveis</a>
-          <a href="#">Desenvolvimento de aplicações SAAS</a>
-          <a href="#">Desenvolvimento de APIs e servidores</a>
+          <h2 className="text-2xl font-bold">{locale?.services.title}</h2>
+          <a href="#">{locale?.services.mobileDev}</a>
+          <a href="#">{locale?.services.saasDev}</a>
+          <a href="#">{locale?.services.apiDev}</a>
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-bold">Contato</h2>
+          <h2 className="text-2xl font-bold">{locale?.links.contact}</h2>
           <span>
             <b>Email:</b>{' '}
             <a href="mailto:vigelcontato@gmail.com">vigelcontato@gmail.com</a>
@@ -94,15 +96,15 @@ export default function Footer() {
               <b>Address</b>{' '}
             </span>
 
-            <h4>Horas de funcionamento:</h4>
-            <span>Segunda - Sexta: 9:00 até 5pm</span>
+            <h4>{locale?.contactInfo.operatingHours.title}</h4>
+            <span>{locale?.contactInfo.operatingHours.hours}</span>
           </div>
         </div>
       </article>
 
       <div>
         <p>
-          <a href="#">Termos de condições</a>
+          <a href="#">{locale?.terms}</a>
         </p>
         <p>© 2024 Vigel </p>
       </div>

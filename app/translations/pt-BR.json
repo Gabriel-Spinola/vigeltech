@@ -25,7 +25,7 @@
       {
         "title": "Desenvolvimento de Servidores e APIs",
         "text": "Desenvolvemos servidores escaláveis e APIs robustas que garantem a comunicação eficiente entre sistemas, possibilitando a integração de dados e automação de processos para suportar o crescimento do seu negócio.",
-         "icon": "nearby"
+        "icon": "nearby"
       },
       {
         "title": "Desenvolvimento de Sistemas",
@@ -40,5 +40,45 @@
     "whoWeAreText": "Somos uma empresa especializada em desenvolvimento de aplicativos mobile e desktop, criação de sites e sistemas, além de oferecer serviços de design. Asseguramos que cada projeto reflita a individualidade de quem o solicita, com performance otimizada para suas necessidades.",
     "ourVisionTitle": "NOSSA VISÃO",
     "ourVisionText": "Transformar ideias em soluções digitais eficazes, ajudando empresas a criar, escalar e expandir seus produtos e serviços."
+  },
+  "portfolioSection": {
+    "title1": "NOSSOS",
+    "title2": "PROJETOS",
+    "title3": "PORTFÓLIO"
+  },
+  "footer": {
+    "title": "VAMOS CONSTRUIR ALGO JUNTOS?",
+    "description": "Contrate uma equipe de especialistas oferecendo soluções completas de software ",
+    "description2": "para impulsionar seu negócio com agilidade e eficiência.",
+    "buttons": {
+      "scheduleCall": "Marque uma call",
+      "sendEmail": "Nos mande um email"
+    },
+    "contactInfo": {
+      "companyName": "Vigel",
+      "from": "From Brasil",
+      "phone1": "Tel 1: +55 (31) 9 7300-8566",
+      "phone2": "Tel 2: +55 (31) 9 8865-4602",
+      "email": "vigelcontato@gmail.com",
+      "operatingHours": {
+        "title": "Horas de funcionamento:",
+        "hours": "Segunda - Sexta: 9:00 até 17:00"
+      }
+    },
+    "links": {
+      "title": "Links",
+      "services": "Nossos serviços",
+      "aboutUs": "Sobre nós",
+      "projects": "Nossos trabalhos",
+      "contact": "Contato"
+    },
+    "services": {
+      "title": "Serviços",
+      "mobileDev": "Desenvolvimento de aplicativos móveis",
+      "saasDev": "Desenvolvimento de aplicações SAAS",
+      "apiDev": "Desenvolvimento de APIs e servidores"
+    },
+    "terms": "Termos de condições",
+    "copyright": "© 2024 Vigel"
   }
 }

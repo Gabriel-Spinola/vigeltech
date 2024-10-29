@@ -40,5 +40,45 @@
     "whoWeAreText": "We are a company specialized in mobile and desktop app development, website and system creation, and design services. We ensure that each project reflects the individuality of its client, with performance optimized for their specific needs.",
     "ourVisionTitle": "OUR VISION",
     "ourVisionText": "To turn ideas into effective digital solutions, helping businesses create, scale, and expand their products and services."
+  },
+  "portfolioSection": {
+    "title1": "OUR",
+    "title2": "PROJECTS",
+    "title3": "PORTFOLIO"
+  },
+  "footer": {
+    "title": "LET’S BUILD SOMETHING TOGETHER?",
+    "description": "Hire a team of specialists offering complete software solutions",
+    "description2": "to drive your business with agility and efficiency.",
+    "buttons": {
+      "scheduleCall": "Schedule a Call",
+      "sendEmail": "Send us an Email"
+    },
+    "contactInfo": {
+      "companyName": "Vigel",
+      "from": "From Brazil",
+      "phone1": "Tel 1: +55 (31) 9 7300-8566",
+      "phone2": "Tel 2: +55 (31) 9 8865-4602",
+      "email": "vigelcontato@gmail.com",
+      "operatingHours": {
+        "title": "Operating Hours:",
+        "hours": "Monday - Frady: 9:00 AM to 5 PM"
+      }
+    },
+    "links": {
+      "title": "Links",
+      "services": "Our Services",
+      "aboutUs": "About Us",
+      "projects": "Our Projects",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "mobileDev": "Mobile App Development",
+      "saasDev": "SaaS Application Development",
+      "apiDev": "API and Server Development"
+    },
+    "terms": "Terms and Conditions",
+    "copyright": "© 2024 Vigel"
   }
 }
