@@ -32,7 +32,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" type="image/png" />
       </head>
       <body
-        className={`antialiased flex flex-col min-h-screen bg-graylight font-sans`}
+        className={`w-full text-center antialiased flex flex-col min-h-screen bg-graylight font-sans`}
       >
         {children}
       </body>
