@@ -23,7 +23,7 @@
         "icon": "travel_explore"
       },
       {
-        "title": "Server and API Development",
+        "title": "Server & API Development",
         "text": "We develop scalable servers and robust APIs that ensure efficient communication between systems, enabling data integration and process automation to support your business growth.",
         "icon": "nearby"
       },
@@ -47,7 +47,7 @@
     "title3": "PORTFOLIO"
   },
   "footer": {
-    "title": "LET’S BUILD SOMETHING TOGETHER?",
+    "title": "LET’S BUILD SOMETHING TOGETHER",
     "description": "Hire a team of specialists offering complete software solutions",
     "description2": "to drive your business with agility and efficiency.",
     "buttons": {

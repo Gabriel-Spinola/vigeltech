@@ -11,19 +11,19 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className={`flex flex-col items-center gap-32 w-full py-12 bg-black text-white text-center justify-center ${styles.footerContainer}`}
+      className={`flex flex-col lg:items-center px-6 gap-32 w-full py-12 bg-black text-white text-center justify-center ${styles.footerContainer}`}
     >
-      <article className="flex flex-col w-full gap-8">
+      <article className="flex flex-col w-full gap-8 text-left lg:text-center">
         <h1 className="text-5xl font-bold text-redlight">{locale?.title}</h1>
-        <p className="text-graylight text-xl">
+        <p className="text-graylight text-xl text-left lg:text-center">
           {locale?.description}
-          <br />
+          <br className="hidden lg:flex" />
           {locale?.description2}
         </p>
 
         <div className="flex flex-row gap-8 align-middle justify-center">
           <button
-            className="w-[16vw] h-[5.5vh] shadow-lg rounded-lg shadow-reddark bg-redlight border-graylight hover:ease-in transition-all duration-100 ease-in-out hover:bg-graylight hover:border hover:border-graylight hover:text-redlight hover:scale-105"
+            className="lg:w-[16vw] w-[40vw] h-[8vh] lg:h-[5.5vh] shadow-lg rounded-lg shadow-reddark bg-redlight border-graylight hover:ease-in transition-all duration-100 ease-in-out hover:bg-graylight hover:border hover:border-graylight hover:text-redlight hover:scale-105"
             onClick={() =>
               (window.location.href = 'https://calendly.com/vigelbiz7/30min')
             }
@@ -31,7 +31,7 @@ export default function Footer() {
             {locale?.buttons.scheduleCall}
           </button>
           <button
-            className="w-[16vw] h-[5.5vh] shadow-lg shadow-reddark rounded-lg border-redlight border hover:text-redlight transition-all duration-150 hover:scale-105"
+            className="lg:w-[16vw] w-[40vw] h-[8vh] lg:h-[5.5vh] shadow-lg shadow-reddark rounded-lg border-redlight border hover:text-redlight transition-all duration-150 hover:scale-105"
             onClick={() =>
               (window.location.href = 'mailto:vigelcontato@gmail.com')
             }
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
       </article>
 
-      <article className="flex flex-row gap-36 text-start">
+      <article className="flex flex-col lg:flex-row gap-24 lg:gap-36 text-start">
         <div className="flex flex-col gap-4">
           <h2 className="text-graylight font-bold text-2xl">Vigel</h2>
           <span>{locale?.contactInfo.from}</span>

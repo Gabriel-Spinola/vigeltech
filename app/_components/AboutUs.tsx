@@ -11,30 +11,28 @@ export default function AboutUs() {
   const isVisible = useSlideUpAnimation('about-us')
 
   return (
-    <section className={`px-32 pb-40 bg-redlight ${styles.aboutUsContainer}`}>
+    <section
+      className={`px-12 md:px-32 md:pb-36 lg:pb-44 lg:pt-12 bg-redlight ${styles.aboutUsContainer}`}
+    >
       <section
         id="about-us"
-        className={`flex flex-row items-center justify-around gap-16 py-16 ${styles.aboutUs} ${isVisible ? 'section-show' : 'section-hidden'}`}
+        className={`flex flex-col lg:flex-row items-start md:items-center md:justify-around md:gap-16 py-16 ${styles.aboutUs} ${isVisible ? 'section-show' : 'section-hidden'}`}
       >
         <div>
-          {/* Container for the right side */}
-          <div className="text-xl text-[#fff] max-w-xl">
-            <h2 className="text-5xl text-[#fff]">
+          <div className="text-xl text-left text-[#fff] max-w-xl">
+            <h2 className="lg:text-left overflow-y-hidden text-5xl text-[#fff]">
               {translation?.whoWeAreTitle}
             </h2>
-            {/* Adjusted max-width */}
-            <p>{translation?.whoWeAreText}</p>
+            <p className="lg:text-left">{translation?.whoWeAreText}</p>
           </div>
         </div>
 
         <div className=" translate-y-11">
-          {/* Container for the left side */}
           <div className="text-xl text-[#fff] max-w-xl">
-            <h2 className="text-5xl text-[#fff]">
+            <h2 className="text-left overflow-y-hidden text-5xl text-[#fff]">
               {translation?.ourVisionTitle}
             </h2>
-            {/* Adjusted max-width */}
-            <p>{translation?.ourVisionText}</p>
+            <p className="text-left">{translation?.ourVisionText}</p>
           </div>
         </div>
       </section>

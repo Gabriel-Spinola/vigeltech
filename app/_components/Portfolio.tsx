@@ -15,17 +15,17 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className={`px-32 pt-16 mb-4 flex flex-col gap-20 ${styles.carouselContainer} ${isVisible ? 'section-show' : 'section-hidden'}`}
+      className={`px-2 md:px-4 lg:px-32 pt-16 mb-4 flex flex-col gap-20 ${styles.carouselContainer} ${isVisible ? 'section-show' : 'section-hidden'}`}
     >
-      <h1 className="text-5xl text-graydark text-center">
+      <h1 className="text-5xl text-graydark text-center overflow-y-hidden">
         {translation?.title1}{' '}
         <span className="text-redlight">{translation?.title2}</span>
       </h1>
       <Carousel />
       <section className="flex flex-col gap-4">
-        <aside className="flex gap-16 items-center justify-center">
+        <aside className="flex gap-6 lg:gap-16 items-center justify-center">
           <a
-            className="w-44 h-44 relative rounded-full overflow-hidden drop-shadow opacity-75 hover:scale-105 hover:opacity-100"
+            className="w-36 h-36 lg:w-44 lg:h-44 relative rounded-full overflow-hidden drop-shadow opacity-75 lg:hover:scale-105 hover:opacity-100"
             href={'https://youtube.com/vittozao'}
             target="_blank"
           >
@@ -37,7 +37,7 @@ export default function Portfolio() {
             />
           </a>
           <a
-            className="w-44 h-44 relative rounded-full overflow-hidden bg-darkblue drop-shadow opacity-75 hover:scale-105 hover:opacity-100"
+            className="w-36 h-36 lg:w-44 lg:h-44 relative rounded-full overflow-hidden bg-darkblue drop-shadow opacity-75 lg:hover:scale-105 hover:opacity-100"
             href={'#'}
             target="_blank"
           >
@@ -49,7 +49,7 @@ export default function Portfolio() {
             />
           </a>
           <a
-            className="w-44 h-44 relative rounded-full overflow-hidden drop-shadow opacity-75 hover:scale-105 hover:opacity-100"
+            className="w-36 h-36 lg:w-44 lg:h-44 relative rounded-full overflow-hidden drop-shadow opacity-75 lg:hover:scale-105 hover:opacity-100"
             href={'https://www.fiemg.com.br/senai/'}
             target="_blank"
           >

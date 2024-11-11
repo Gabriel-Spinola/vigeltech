@@ -1,29 +1,21 @@
 'use client'
 
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState } from 'react'
 import styles from '@/app/styles/services.module.scss'
 import useSlideUpAnimation from '../_hooks/useSlideUpAnimation'
 import { TranslationContext } from '../_providers/translationContext'
+import useIsMobile from '../_hooks/useIsMobile'
 
 export default function Services() {
   const translationContext = useContext(TranslationContext)
   const services = translationContext?.translation.servicesSection?.services
   const translation = translationContext?.translation.servicesSection
 
+  const isVisible = useSlideUpAnimation('services-section')
   const lgScreenSize = 976
 
+  const isMobile = useIsMobile(lgScreenSize)
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
-  const [isMobile, setIsMobile] = useState(false)
-
-  const isVisible = useSlideUpAnimation('services-section')
-
-  useEffect(() => {
-    const updateIsMobile = () => setIsMobile(window.innerWidth < lgScreenSize)
-    updateIsMobile()
-
-    window.addEventListener('resize', updateIsMobile)
-    return () => window.removeEventListener('resize', updateIsMobile)
-  }, [])
 
   const toggleExpand = (index: number | null) => {
     if (isMobile) {
@@ -50,7 +42,7 @@ export default function Services() {
             onClick={() => toggleExpand(index)}
           >
             <div
-              className={`flex flex-row pl-[15vw] lg:pl-0 justify-start items-center gap-4 transition-transform ease-in-out ${
+              className={`flex flex-row md:pl-[15vw] lg:pl-0 justify-start items-center gap-4 transition-transform ease-in-out ${
                 expandedIndex === index ? 'justify-center pl-0' : ''
               }`}
             >

@@ -39,4 +39,10 @@
       visibility: hidden;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 3.4rem !important;
+    }
+  }
 }
