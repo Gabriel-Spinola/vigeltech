@@ -20,19 +20,23 @@ export default function AboutUs() {
       >
         <div>
           <div className="text-xl text-left text-[#fff] max-w-xl">
-            <h2 className="lg:text-left overflow-y-hidden text-5xl text-[#fff]">
+            <h2 className="lg:text-left overflow-y-hidden text-4xl md:text-5xl pb-4 text-[#fff]">
               {translation?.whoWeAreTitle}
             </h2>
-            <p className="lg:text-left">{translation?.whoWeAreText}</p>
+            <p className="text-lg md:text-xl lg:text-left">
+              {translation?.whoWeAreText}
+            </p>
           </div>
         </div>
 
         <div className=" translate-y-11">
           <div className="text-xl text-[#fff] max-w-xl">
-            <h2 className="text-left overflow-y-hidden text-5xl text-[#fff]">
+            <h2 className="text-left pb-2 overflow-y-hidden text-4xl md:text-4xl text-[#fff]">
               {translation?.ourVisionTitle}
             </h2>
-            <p className="text-left">{translation?.ourVisionText}</p>
+            <p className="text-lg md:text-xl text-left">
+              {translation?.ourVisionText}
+            </p>
           </div>
         </div>
       </section>

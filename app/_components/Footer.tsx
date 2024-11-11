@@ -15,7 +15,7 @@ export default function Footer() {
     >
       <article className="flex flex-col w-full gap-8 text-left lg:text-center">
         <h1 className="text-5xl font-bold text-redlight">{locale?.title}</h1>
-        <p className="text-graylight text-xl text-left lg:text-center">
+        <p className="text-graylight text-lg md:text-xl text-left lg:text-center">
           {locale?.description}
           <br className="hidden lg:flex" />
           {locale?.description2}
@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div className="flex flex-row gap-8 align-middle justify-center">
           <button
-            className="lg:w-[16vw] w-[40vw] h-[8vh] lg:h-[5.5vh] shadow-lg rounded-lg shadow-reddark bg-redlight border-graylight hover:ease-in transition-all duration-100 ease-in-out hover:bg-graylight hover:border hover:border-graylight hover:text-redlight hover:scale-105"
+            className="lg:w-[16vw] w-[40vw] h-[8vh] lg:h-[5.5vh] text-base md:text-xl shadow-lg rounded-lg shadow-reddark bg-redlight border-graylight hover:ease-in transition-all duration-100 ease-in-out hover:bg-graylight hover:border hover:border-graylight hover:text-redlight hover:scale-105"
             onClick={() =>
               (window.location.href = 'https://calendly.com/vigelbiz7/30min')
             }
@@ -31,7 +31,7 @@ export default function Footer() {
             {locale?.buttons.scheduleCall}
           </button>
           <button
-            className="lg:w-[16vw] w-[40vw] h-[8vh] lg:h-[5.5vh] shadow-lg shadow-reddark rounded-lg border-redlight border hover:text-redlight transition-all duration-150 hover:scale-105"
+            className="lg:w-[16vw] w-[40vw] h-[8vh] lg:h-[5.5vh] text-base md:text-xl shadow-lg shadow-reddark rounded-lg border-redlight border hover:text-redlight transition-all duration-150 hover:scale-105"
             onClick={() =>
               (window.location.href = 'mailto:vigelcontato@gmail.com')
             }

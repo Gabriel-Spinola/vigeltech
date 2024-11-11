@@ -25,7 +25,7 @@ export default function Portfolio() {
       <section className="flex flex-col gap-4">
         <aside className="flex gap-6 lg:gap-16 items-center justify-center">
           <a
-            className="w-36 h-36 lg:w-44 lg:h-44 relative rounded-full overflow-hidden drop-shadow opacity-75 lg:hover:scale-105 hover:opacity-100"
+            className="w-28 h-28 lg:w-44 lg:h-44 relative rounded-full overflow-hidden drop-shadow opacity-75 lg:hover:scale-105 hover:opacity-100"
             href={'https://youtube.com/vittozao'}
             target="_blank"
           >
@@ -37,7 +37,7 @@ export default function Portfolio() {
             />
           </a>
           <a
-            className="w-36 h-36 lg:w-44 lg:h-44 relative rounded-full overflow-hidden bg-darkblue drop-shadow opacity-75 lg:hover:scale-105 hover:opacity-100"
+            className="w-28 h-28 lg:w-44 lg:h-44 relative rounded-full overflow-hidden bg-darkblue drop-shadow opacity-75 lg:hover:scale-105 hover:opacity-100"
             href={'#'}
             target="_blank"
           >
@@ -49,7 +49,7 @@ export default function Portfolio() {
             />
           </a>
           <a
-            className="w-36 h-36 lg:w-44 lg:h-44 relative rounded-full overflow-hidden drop-shadow opacity-75 lg:hover:scale-105 hover:opacity-100"
+            className="w-28 h-28 lg:w-44 lg:h-44 relative rounded-full overflow-hidden drop-shadow opacity-75 lg:hover:scale-105 hover:opacity-100"
             href={'https://www.fiemg.com.br/senai/'}
             target="_blank"
           >

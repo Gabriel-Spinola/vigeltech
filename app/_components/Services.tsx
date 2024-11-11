@@ -38,15 +38,15 @@ export default function Services() {
         {services?.map((service, index) => (
           <li
             key={index}
-            className="w-full flex flex-col lg:flex-row lg:justify-between p-4 gap-2 cursor-pointer"
+            className="w-full flex flex-col text-left lg:flex-row lg:justify-between p-4 gap-2 cursor-pointer"
             onClick={() => toggleExpand(index)}
           >
             <div
-              className={`flex flex-row md:pl-[15vw] lg:pl-0 justify-start items-center gap-4 transition-transform ease-in-out ${
+              className={`flex flex-row md:pl-[15vw] lg:pl-0 justify-start items-center gap-4 transition-transform ease-in-out overflow-x-visible ${
                 expandedIndex === index ? 'justify-center pl-0' : ''
               }`}
             >
-              <span className="material-symbols-outlined text-3xl lg:text-3xl">
+              <span className="material-symbols-outlined text-3xl lg:text-3xl overflow-x-visible">
                 {service.icon}
               </span>
               <h3>{service.title}</h3>
@@ -61,7 +61,7 @@ export default function Services() {
                 maxHeight: expandedIndex === index || !isMobile ? '200px' : '0',
               }}
             >
-              <p className="md:max-w-screen-md md:self-center md:text-center lg:max-w-[500px] xl:max-w-[768px] lg:text-left mt-4">
+              <p className="max-h-screen md:max-w-screen-md text-lg md:text-xl md:self-center md:text-center lg:max-w-[500px] xl:max-w-[768px] lg:text-left mt-2 md:mt-4">
                 {service.text}
               </p>
             </div>

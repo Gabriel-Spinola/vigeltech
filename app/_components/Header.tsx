@@ -14,7 +14,7 @@ export default async function Header({ locale }: { locale: ImplLocale }) {
         style={{ backgroundAttachment: 'fixed' }}
       >
         <section
-          className={`flex flex-row lg:gap-24 items-center ${styles.headerContent}`}
+          className={`flex flex-row items-start lg:gap-24 md:items-center ${styles.headerContent}`}
         >
           <SmileyIcon />
           <section className="flex flex-col w-full gap-24 font-bold">

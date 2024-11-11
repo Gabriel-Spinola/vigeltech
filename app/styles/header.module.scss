@@ -42,7 +42,11 @@
 
   @media screen and (max-width: 480px) {
     h1 {
-      font-size: 3.4rem !important;
+      position: absolute;
+      margin: 0 auto;
+      transform: translateX(-5%);
+      font-size: 3rem !important;
+      overflow-x: visible !important;
     }
   }
 }
