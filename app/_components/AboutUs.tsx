@@ -12,7 +12,7 @@ export default function AboutUs() {
 
   return (
     <section
-      className={`px-12 md:px-32 md:pb-36 lg:pb-44 lg:pt-12 bg-redlight ${styles.aboutUsContainer}`}
+      className={`px-12 md:px-32 md:pb-36 lg:pb-44 lg:pt-12 bg-redlight overflow-hidden ${styles.aboutUsContainer}`}
     >
       <section
         id="about-us"
