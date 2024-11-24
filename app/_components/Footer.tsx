@@ -14,8 +14,10 @@ export default function Footer() {
       className={`flex flex-col lg:items-center px-6 gap-32 w-full py-12 bg-black text-white text-center justify-center ${styles.footerContainer}`}
     >
       <article className="flex flex-col w-full gap-8 text-left lg:text-center">
-        <h1 className="text-5xl font-bold text-redlight">{locale?.title}</h1>
-        <p className="text-graylight text-lg md:text-xl text-left lg:text-center">
+        <h1 className="text-5xl font-bold text-redlight text-center">
+          {locale?.title}
+        </h1>
+        <p className="text-graylight text-lg md:text-xl text-center">
           {locale?.description}
           <br className="hidden lg:flex" />
           {locale?.description2}
