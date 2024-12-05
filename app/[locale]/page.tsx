@@ -8,7 +8,7 @@ import _Result from '@repo/common/result'
 
 export default async function Home({ params }: { params: { locale: string } }) {
   const translation = await getTranslation(params.locale as ImplLocale)
-  const result = _Result.succeed("")
+  const result = _Result.succeed("0")
 
   return (
     <>
