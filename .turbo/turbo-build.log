@@ -1,0 +1,29 @@
+[?9001h[?1004h[?25l[2J[m[H]0;C:\Windows\system32\cmd.exe [?25h[?25l
+> harpya-web@0.1.0 build C:\Users\Gabriel Spinola\Desktop\projects\PokeRepo\poke-repo-turbo\apps\vigeltech
+> next build[6;1H[?25h[?25l  [38;2;173;127;168m[1m▲ Next.js 14.2.13[m[8;1H [37m[1m [m Creating an optimized production build ...
+[?25h [32m[1m✓[m Compiled successfully
+ [37m[1m [m Linting and checking validity of types  [36m.[?25l[m [37m[1m [m Linting and checking validity of types  [36m..[K[31C[m [37m[1m [m Linting and checking validity of types  [36m...[K[30C[m [37m[1m [m Linting and checking validity of types  [36m.[K[32C[m [37m[1m [m Linting and checking validity of types  [36m..[K[31C[m [37m[1m [m Linting and checking validity of types  [36m...[K[30C[m [37m[1m [m Linting and checking validity of types  [36m.[K[32C[m [37m[1m [m Linting and checking validity of types  [36m..[K[31C[m [37m[1m [m Linting and checking validity of types  [36m...[K[30C[m [37m[1m [m Linting and checking validity of types  [36m.[K[32C[m [37m[1m [m Linting and checking validity of types  [36m..[K[31C[m [37m[1m [m Linting and checking validity of types  [36m...[K[30C[m[10;47H [31m[1m⨯[m ESLint: Plugin "@typescript
+[9;76Ht-eslint" was conflicted between ".eslintrc.json » eslint-config-next/typescr
+[9;76Hript » plugin:@typescript-eslint/recommended » ./configs/base" and ".eslintrc
+[9;76Hc.json » @rocketseat/eslint-config/next".[36C
+ [32m[1m✓[m Linting and checking validity of types[K[?25h
+ [37m[1m [m Collecting page data  [36m.[K[?25l[50C[m [37m[1m [m Collecting page data  [36m..[K[49C[m [32m[1m✓[m Collecting page data[K[?25h
+ [37m[1m [m Generating static pages (0/4)  [36m[    ][?25l[m [37m[1m [m Generating static pages (3/4)  [36m[=   ][K[36C[m [32m[1m✓[m Generating static pages (4/4)[K[?25h
+ [32m[1m✓[m Collecting build traces[K
+ [32m[1m✓[m Finalizing page optimization[K
+
+[4mRoute (app)[24m[30X[4m[30CSize[24m     [4mFirst Load JS[24m
+┌ ○ /_not-found                          872 B[37m[1m[10C88.1 kB[m[K
+├ ƒ /[locale]                            18 kB[37m[1m[11C105 kB[m[K
+└ ○ /icon.png                            0 B[37m[1m[16C0 B[m[K
++ First Load JS shared by all[37m[1m[12C87.2 kB[m[K
+  ├ chunks/232d4b8b-4e0259542636ac0c.js  53.6 kB
+  ├ chunks/370-cf265032eec36f61.js       31.6 kB
+  └ other shared chunks (total)          1.96 kB
+
+
+ƒ Middleware[37m[1m[29C36.8 kB[m[K
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
