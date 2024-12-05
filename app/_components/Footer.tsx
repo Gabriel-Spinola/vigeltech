@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useContext } from 'react'
-import styles from '@/app/styles/footer.module.scss'
+import styles from '../styles/footer.module.scss'
 import { TranslationContext } from '../_providers/translationContext'
 
 export default function Footer() {

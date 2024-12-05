@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/app/styles/header.module.scss'
+import styles from '../styles/header.module.scss'
 import SmileyIcon from './SmileyIcons'
 import Link from 'next/link'
 import { getTranslation, ImplLocale } from '../[locale]/getTranslations'

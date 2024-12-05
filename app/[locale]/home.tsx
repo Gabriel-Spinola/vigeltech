@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { TranslationContext } from '../_providers/translationContext'
-import styles from '@/app/styles/main.module.scss'
+import styles from '../styles/main.module.scss'
 import Footer from '../_components/Footer'
 import Services from '../_components/Services'
 import AboutUs from '../_components/AboutUs'

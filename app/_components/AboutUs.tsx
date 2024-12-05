@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useContext } from 'react'
-import styles from '@/app/styles/aboutus.module.scss'
+import styles from '../styles/aboutus.module.scss'
 import useSlideUpAnimation from '../_hooks/useSlideUpAnimation'
 import { TranslationContext } from '../_providers/translationContext'
 

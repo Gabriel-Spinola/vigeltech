@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/app/styles/team.module.scss'
+import styles from '../styles/team.module.scss'
 
 export default function Team() {
   return (
