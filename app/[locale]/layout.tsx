@@ -1,8 +1,21 @@
 import type { Metadata } from 'next'
 import '../globals.css'
 import 'material-symbols'
+import BackgroundLines from '../_components/BackgroundLines'
+import { Rokkitt, Inter } from 'next/font/google'
 
-// NOTE - Fonts imports
+const rokkitt = Rokkitt({
+  subsets: ['latin'],
+  variable: '--font-rokkitt',
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '800', '900'],
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Vigel | Sua ideia tornando realidade',
@@ -16,24 +29,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br" className="scrool-smooth focus:scroll-auto">
+    <html lang="pt-br" className="scroll-smooth focus:scroll-auto">
       <head>
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
-        />
-
         <link rel="icon" href="/logo.png" type="image/png" />
       </head>
       <body
-        className={`w-full text-center antialiased flex flex-col min-h-screen bg-graylight font-sans`}
+        className={`${rokkitt.variable} ${inter.variable} w-full text-center antialiased flex flex-col min-h-screen bg-graylight font-sans relative overflow-x-hidden`}
       >
+        <BackgroundLines />
         {children}
       </body>
     </html>

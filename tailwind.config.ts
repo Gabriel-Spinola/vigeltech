@@ -29,7 +29,7 @@ const config: Config = {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
       rokkitt: ['var(--font-rokkitt)', 'serif'], // Fonte Rokkitt
-      poppins: ['var(--font-poppins)', 'sans-serif'], // Fonte Poppins
+      inter: ['Inter', 'sans-serif'], // Trocando poppins por inter
     },
     extend: {
       spacing: {
