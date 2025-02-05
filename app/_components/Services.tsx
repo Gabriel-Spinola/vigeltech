@@ -38,7 +38,7 @@ export default function Services() {
         {services?.map((service, index) => (
           <li
             key={index}
-            className="w-full flex flex-col text-left lg:flex-row lg:justify-between p-4 gap-2 cursor-pointer"
+            className="w-full flex flex-col text-left lg:flex-row lg:justify-between p-4 gap-2"
             onClick={() => toggleExpand(index)}
           >
             <div

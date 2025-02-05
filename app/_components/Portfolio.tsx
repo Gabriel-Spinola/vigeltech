@@ -17,7 +17,7 @@ export default function Portfolio() {
       id="portfolio"
       className={`px-2 md:px-4 lg:px-32 pt-16 mb-4 flex flex-col gap-20 ${styles.carouselContainer} ${isVisible ? 'section-show' : 'section-hidden'}`}
     >
-      <h1 className="text-5xl text-graydark text-center overflow-y-hidden">
+      <h1 className="text-5xl text-gray text-center overflow-y-hidden">
         {translation?.title1}{' '}
         <span className="text-redlight">{translation?.title2}</span>
       </h1>
