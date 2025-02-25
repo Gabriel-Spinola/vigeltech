@@ -1,36 +1,39 @@
 {
+  "headerOptions": [
+    "produtos",
+    "sobre",
+    "contato"
+  ],
   "services": "serviços",
   "about": "sobre",
   "contact": "contato",
-  "headerTitle": {
-    "main": "FAZENDO",
-    "your": "SUA",
-    "idea": "IDEIA",
-    "reality": "REALIDADE"
-  },
+  "headerTitle": [
+    "FAZENDO",
+    "SUA",
+    "IDEIA",
+    "REALIDADE"
+  ],
+  "subHeaderTitle": "Transformamos ideias em soluções digitais eficazes, ajudando empresas a criar, escalar e expandir seus produtos e serviços.",
   "servicesSection": {
-    "title1": "NOSSOS",
-    "title2": "SERVIÇOS",
+    "title": "NOSSOS SERVIÇOS",
     "services": [
       {
-        "title": "Desenvolvimento de aplicativos móveis",
-        "text": "Criamos aplicativos mobile personalizados que ajudam sua empresa a se conectar melhor com clientes, melhorar processos internos e explorar novas oportunidades de mercado.",
-        "icon": "phone_iphone"
+        "title": "Desenvolvimento de Apps",
+        "text": "Criamos aplicativos mobile e desktop personalizados que ajudam sua empresa a se conectar melhor com clientes, melhorar processos internos e explorar novas oportunidades de mercado.",
+        "icon": "phone_iphone",
+        "image": ""
       },
       {
         "title": "Desenvolvimento WEB",
         "text": "Criamos websites personalizados e soluções SaaS que permitem às empresas expandir sua presença digital, otimizar operações e oferecer serviços inovadores online, atendendo às demandas do mercado moderno.",
-        "icon": "travel_explore"
+        "icon": "travel_explore",
+        "image": ""
       },
       {
-        "title": "Desenvolvimento de Servidores e APIs",
-        "text": "Desenvolvemos servidores escaláveis e APIs robustas que garantem a comunicação eficiente entre sistemas, possibilitando a integração de dados e automação de processos para suportar o crescimento do seu negócio.",
-        "icon": "nearby"
-      },
-      {
-        "title": "Desenvolvimento de Sistemas",
+        "title": "Consultoria Técnica",
         "text": "Sabemos que cada empresa tem suas próprias necessidades e processos únicos. Por isso oferecemos desenvolvimento de sistemas personalizados, criados sob medida para resolver desafios específicos e otimizar o funcionamento do seu negócio.",
-        "icon": "desktop_windows"
+        "icon": "desktop_windows",
+        "image": ""
       }
     ],
     "contactUs": "CONTATE-NOS"
@@ -40,6 +43,14 @@
     "whoWeAreText": "Somos uma empresa especializada em desenvolvimento de aplicativos mobile e desktop, criação de sites e sistemas, além de oferecer serviços de design. Asseguramos que cada projeto reflita a individualidade de quem o solicita, com performance otimizada para suas necessidades.",
     "ourVisionTitle": "NOSSA VISÃO",
     "ourVisionText": "Transformar ideias em soluções digitais eficazes, ajudando empresas a criar, escalar e expandir seus produtos e serviços."
+  },
+  "consultancySection": {
+    "title": "CONSULTORIA TÉCNICA",
+    "subtitles": [
+      "A consultoria técnica para desenvolvimento oferece suporte especializado em tecnologia, ajudando empresas a criar soluções eficientes, inovadoras e alinhadas aos objetivos do negócio.",
+      "Nossa equipe de especialistas está pronta para ajudar você a otimizar seus processos, melhorar a eficiência e impulsionar o crescimento do seu negócio.",
+      "A consultoria é indicada tanto no início de projetos quanto em momentos críticos, como na resolução de problemas técnicos, atualizações tecnológicas ou ao escalar sistemas existentes."
+    ]
   },
   "portfolioSection": {
     "title1": "NOSSOS",

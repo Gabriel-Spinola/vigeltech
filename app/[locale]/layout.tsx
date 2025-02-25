@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import '../globals.css'
 import 'material-symbols'
-import BackgroundLines from '../_components/BackgroundLines'
 import { Rokkitt, Inter } from 'next/font/google'
 
 const rokkitt = Rokkitt({
@@ -34,9 +33,8 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" type="image/png" />
       </head>
       <body
-        className={`${rokkitt.variable} ${inter.variable} w-full text-center antialiased flex flex-col min-h-screen bg-graylight font-sans relative overflow-x-hidden`}
+        className={`${rokkitt.variable} ${inter.variable} w-full text-center antialiased flex flex-col min-h-screen bg-[#ededed] font-sans relative overflow-x-hidden`}
       >
-        <BackgroundLines />
         {children}
       </body>
     </html>
