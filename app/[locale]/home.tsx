@@ -69,6 +69,21 @@ export default function Main({
             </ul>
           </div>
         </section>
+        <section className={styles.portfolioContainer}>
+          <h2 className={styles.portfolioTitle}>
+            {translation.portfolioSection.title1}{' '}
+            {translation.portfolioSection.title2}{' '}
+          </h2>
+          <div className={styles.portfolioCards}>
+            {translation.portfolioCards.map((card, index) => (
+              <div key={`card-${index}`} className={styles.portfolioCard}>
+                <h3>{card.title}</h3>
+                <p>{card.description}</p>
+                <div className={styles.portfolioCardImageContainer}></div>
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
     </TranslationContext.Provider>
   )

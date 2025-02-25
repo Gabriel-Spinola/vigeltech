@@ -60,6 +60,23 @@
     "title2": "PROJECTS",
     "title3": "PORTFOLIO"
   },
+  "portfolioCards": [
+    {
+      "title": "Studio Bruno Muniz",
+      "description": "Descrição do projeto 1",
+      "image": ""
+    },
+    {
+      "title": "Projeto 2",
+      "description": "Descrição do projeto 2",
+      "image": ""
+    },
+    {
+      "title": "Projeto 3",
+      "description": "Descrição do projeto 3",
+      "image": ""
+    }
+  ],
   "footer": {
     "title": "LET’S BUILD SOMETHING TOGETHER",
     "description": "Hire a team of specialists offering complete software solutions",

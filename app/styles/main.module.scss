@@ -243,4 +243,18 @@
     }
 
   }
+
+  .portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 128px;
+
+    .portfolioTitle {
+      font-family: $font-primary;
+      color: $tertiary-color;
+      font-size: 48px;
+      font-weight: 800;
+    }
+  }
 }
