@@ -7,9 +7,9 @@ export default async function Header({ locale }: { locale: ImplLocale }) {
   return (
     <header className={styles.header}>
       <nav className={styles.headerNav}>
-        {translation.headerOptions?.map((headerOption, index) => (
+        {translation.headerOptions?.map((headerOption: string, index) => (
           <a href="#" className={styles.headerNavLi} key={index}>
-            {headerOption.title}
+            {headerOption}
           </a>
         ))}
       </nav>
