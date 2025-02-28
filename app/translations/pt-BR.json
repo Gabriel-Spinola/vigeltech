@@ -61,17 +61,37 @@
   "portfolioCards": [
     {
       "title": "Studio Bruno Muniz",
-      "description": "Descrição do projeto 1",
+      "description": "Neste projeto criamos um CMS para o personal trainer Bruno Muniz, onde ele pode cadastrar, editar e excluir clientes, acompanhar suas evoluções e criar novos treinos.",
+      "image": "/img/brunomuniz.jpg"
+    },
+    {
+      "title": "PobreSettings",
+      "description": "Baseado no ProSettings, criamos um website para encontrar as melhores opções de perifericos para o seu setup gamer.",
+      "image": "/img/pobresettings.png"
+    },
+    {
+      "title": "VittoTree",
+      "description": "Criado para o youtuber Vittozão, onde ele tem uma versão de um site inspirado no LinktTree, porém 100% personalizado e atualizado pelo próprio youtuber no Excel.",
       "image": ""
     },
     {
-      "title": "Projeto 2",
-      "description": "Descrição do projeto 2",
+      "title": "BuilderBuddy",
+      "description": "Uma rede social para arquitetos, engenheiros e artistas de rua, onde eles podem compartilhar seus projetos e receber feedbacks.",
       "image": ""
     },
     {
-      "title": "Projeto 3",
-      "description": "Descrição do projeto 3",
+      "title": "HarpyaHUD",
+      "description": "Um HUD feito para transmissões de CS2, 100% brasileira, com uma interface moderna e fácil de usar.",
+      "image": ""
+    },
+    {
+      "title": "Manutenção de Website: LedExpert",
+      "description": "Manutenção no sistema de carrosseis e header.",
+      "image": ""
+    },
+    {
+      "title": "Manutenção de Website: LedExpert",
+      "description": "Manutenção no sistema de carrosseis e header.",
       "image": ""
     }
   ],

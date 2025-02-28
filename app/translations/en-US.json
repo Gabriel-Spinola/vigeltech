@@ -64,7 +64,7 @@
     {
       "title": "Studio Bruno Muniz",
       "description": "Descrição do projeto 1",
-      "image": ""
+      "image": "/img/brunomuniz.jpg"
     },
     {
       "title": "Projeto 2",
@@ -75,7 +75,13 @@
       "title": "Projeto 3",
       "description": "Descrição do projeto 3",
       "image": ""
+    },
+    {
+      "title": "Projeto 4",
+      "description": "Descrição do projeto 4",
+      "image": ""
     }
+    
   ],
   "footer": {
     "title": "LET’S BUILD SOMETHING TOGETHER",

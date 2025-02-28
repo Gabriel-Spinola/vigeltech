@@ -247,7 +247,7 @@
   .portfolioContainer {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
     padding: 0 128px;
 
     .portfolioTitle {
@@ -255,6 +255,48 @@
       color: $tertiary-color;
       font-size: 48px;
       font-weight: 800;
+    }
+
+    .portfolioCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 24px;
+
+      .portfolioCard {
+        background: white;
+        border-radius: 12px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        
+        h3 {
+          font-family: $font-primary;
+          font-size: 24px;
+          font-weight: 800;
+          color: $tertiary-color;
+        }
+
+        p {
+          font-family: $font-secondary;
+          font-size: 16px;
+          color: $tertiary-color;
+          text-align: justify;
+        }
+
+        .portfolioCardImageContainer {
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+          }
+        }
+      }
     }
   }
 }
