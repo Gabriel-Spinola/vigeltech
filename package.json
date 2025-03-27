@@ -1,38 +1,28 @@
 {
-  "name": "harpya-web",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write ."
+    "lint": "next lint"
   },
   "dependencies": {
-    "@formatjs/intl": "^2.10.9",
-    "i18next": "^23.16.2",
-    "material-symbols": "^0.24.0",
-    "next": "14.2.13",
-    "next-i18n-router": "^5.5.1",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-i18next": "^15.1.0",
-    "sharp": "^0.33.5"
+    "next": "15.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sass": "^1.86.0"
   },
   "devDependencies": {
-    "@rocketseat/eslint-config": "^2.2.2",
-    "@types/negotiator": "^0.6.3",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "14.2.13",
-    "negotiator": "^1.0.0",
-    "postcss": "^8",
-    "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.6",
-    "tailwindcss": "^3.4.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }

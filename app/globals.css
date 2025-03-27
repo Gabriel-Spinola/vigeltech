@@ -1,47 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap");
-@import "material-symbols";
+@import "tailwindcss";
 
 :root {
-  --blue: "#4E93BC";
-  --redlight: "#DA6666";
-  --reddark: "#9C4E4E";
-  --graydark: "#434343";
-  --black: #232638;
-  --gray: #595959;
-  --graylight: "#FFFFFF";
   --background: #ffffff;
-  --foreground: var(--graydark);
+  --foreground: #4e94bc;
+  --header: #19638d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #101010;
+    --foreground: #4e94bc;
   }
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 body {
-  color: var(--graydark);
-  background: var(--background);
-}
-
-section {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  opacity: 1;
+  background-image: linear-gradient(var(--foreground) 1px, transparent 1px), linear-gradient(to right, var(--foreground) 1px, var(--background) 1px);
+  background-size: 50px 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
