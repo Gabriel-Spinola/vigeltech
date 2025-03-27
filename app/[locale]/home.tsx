@@ -67,7 +67,14 @@ export default function Main({
           <div className={styles.services}>
             {translation.servicesSection?.services.map((service, index) => (
               <div key={`service-${index}`} className={styles.service}>
-                <div className={styles.serviceImageContainer}></div>
+                <div className={styles.serviceImageContainer}>
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill={true}
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
                 <div className={styles.serviceTitleIcon}>
                   <span className="material-symbols-outlined text-3xl lg:text-3xl overflow-x-visible">
                     {service.icon}

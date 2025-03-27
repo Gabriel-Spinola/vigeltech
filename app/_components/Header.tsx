@@ -1,6 +1,7 @@
 import React from 'react'
 import { getTranslation, ImplLocale } from '../[locale]/getTranslations'
 import styles from '@/app/styles/header.module.scss'
+import BurguerMenu from './BurguerMenu'
 
 export default async function Header({ locale }: { locale: ImplLocale }) {
   const translation = await getTranslation(locale)
@@ -13,6 +14,7 @@ export default async function Header({ locale }: { locale: ImplLocale }) {
           </a>
         ))}
       </nav>
+      <BurguerMenu />
     </header>
   )
 }

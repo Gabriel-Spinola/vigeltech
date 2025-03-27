@@ -21,19 +21,19 @@
         "title": "Desenvolvimento de Apps",
         "text": "Criamos aplicativos mobile e desktop personalizados que ajudam sua empresa a se conectar melhor com clientes, melhorar processos internos e explorar novas oportunidades de mercado.",
         "icon": "phone_iphone",
-        "image": ""
+        "image": "https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "title": "Desenvolvimento WEB",
         "text": "Criamos websites personalizados e soluções SaaS que permitem às empresas expandir sua presença digital, otimizar operações e oferecer serviços inovadores online, atendendo às demandas do mercado moderno.",
         "icon": "travel_explore",
-        "image": ""
+        "image": "https://images.unsplash.com/photo-1605907126120-f68611516ecc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "title": "Consultoria Técnica",
         "text": "Sabemos que cada empresa tem suas próprias necessidades e processos únicos. Por isso oferecemos desenvolvimento de sistemas personalizados, criados sob medida para resolver desafios específicos e otimizar o funcionamento do seu negócio.",
         "icon": "desktop_windows",
-        "image": ""
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ],
     "contactUs": "CONTATE-NOS"
@@ -90,8 +90,8 @@
       "image": ""
     },
     {
-      "title": "Manutenção de Website: LedExpert",
-      "description": "Manutenção no sistema de carrosseis e header.",
+      "title": "Aplicativo para MinersSkills",
+      "description": "Aplicativo para gerenciamento de equipes de robótica.",
       "image": ""
     }
   ],

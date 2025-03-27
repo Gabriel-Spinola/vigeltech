@@ -20,22 +20,26 @@
       {
         "title": "Mobile App Development",
         "text": "We create custom mobile apps that help your business better connect with customers, improve internal processes, and explore new market opportunities.",
-        "icon": "phone_iphone"
+        "icon": "phone_iphone",
+        "image": "https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "title": "WEB Development",
         "text": "We create custom websites and SaaS solutions that help businesses expand their digital presence, optimize operations, and offer innovative online services, meeting the demands of the modern market.",
-        "icon": "travel_explore"
+        "icon": "travel_explore",
+        "image": "https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "title": "Server & API Development",
         "text": "We develop scalable servers and robust APIs that ensure efficient communication between systems, enabling data integration and process automation to support your business growth.",
-        "icon": "nearby"
+        "icon": "nearby",
+        "image": "https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         "title": "System Development",
         "text": "We understand that every company has unique needs and processes. That's why we offer custom system development, tailored to solve specific challenges and optimize the operation of your business.",
-        "icon": "desktop_windows"
+        "icon": "desktop_windows",
+        "image": "https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     ],
     "contactUs": "CONTACT US"
@@ -81,7 +85,6 @@
       "description": "Descrição do projeto 4",
       "image": ""
     }
-    
   ],
   "footer": {
     "title": "LET’S BUILD SOMETHING TOGETHER",

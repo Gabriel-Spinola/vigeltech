@@ -1,24 +1,17 @@
-.footerContainer::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  left: 0;
-  right: 0;
-  height: 100px; // Altura ajustada
-  background: #ffffff; // Ou a cor que deseja
-  transform: skewY(2deg); // Aplicando a inclinação
-  z-index: -1; // Coloca atrás do conteúdo
-}
+@import './variables';
 
 .footerContainer {
   position: relative;
 
-  h1 {
-    font-family: "Rokkitt", serif;
-    font-weight: 800;
-  }
+  article {
+    h1 {
+      font-family: $font-primary;
+      font-weight: 800;
+    }
 
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: $font-secondary,
+    sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
