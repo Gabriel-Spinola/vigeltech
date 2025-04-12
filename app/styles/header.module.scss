@@ -1,4 +1,10 @@
 .header {
   height: 60px;
   background-color: var(--header);
+
+  .logoContainer {
+    position: relative;
+    width: 83px;
+    height: 50px;
+  }
 }

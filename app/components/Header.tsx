@@ -5,9 +5,15 @@ import styles from "@/app/styles/header.module.scss"
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div>
-        <Image src={ } style={{ position: 'relative' }}>Header</Image>
-      </div>
-    </header>
+      <a href='./' >
+        <div className={styles.logoContainer}>
+          <Image
+            src="/img/logo.png"
+            alt="Logo"
+            fill={true}
+          />
+        </div>
+      </a>
+    </header >
   )
 }
